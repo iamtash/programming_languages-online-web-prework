@@ -16,6 +16,6 @@ def reformat_languages(languages)
 
     }
   }
-
+  binding.pry
   new_language_hash
 end
