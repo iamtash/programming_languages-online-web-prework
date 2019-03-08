@@ -4,6 +4,7 @@ def reformat_languages(languages)
   languages.each {|style, languages|
     languages.each {|language, attribute|
       new_language_hash[language] = {}
+      binding.pry
       new_language_hash[language] = attribute
     }
   }
