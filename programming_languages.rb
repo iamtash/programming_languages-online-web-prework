@@ -16,6 +16,6 @@ def reformat_languages(languages)
 
     }
   }
-  
+
   new_language_hash
 end
