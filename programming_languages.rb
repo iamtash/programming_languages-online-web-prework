@@ -5,6 +5,7 @@ def reformat_languages(languages)
 
   languages.each {|style, languages|
     languages.each {|language, attribute|
+      binding.pry
       if new_language_hash[language].class == Hash
         new_language_hash[language][:style] << style
       else
@@ -15,6 +16,6 @@ def reformat_languages(languages)
 
     }
   }
-  binding.pry
+  
   new_language_hash
 end
