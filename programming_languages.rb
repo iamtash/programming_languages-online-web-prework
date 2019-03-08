@@ -5,12 +5,11 @@ def reformat_languages(languages)
 
   languages.each {|style, languages|
     languages.each {|language, attribute|
-      new_language_hash[language] = {}
-      new_language_hash[language] = attribute
-
-      if new_language_hash[language][:style].class == Array
+      if new_language_hash[language].class == Hash
         new_language_hash[language][:style] << style
       else
+        new_language_hash[language] = {}
+        new_language_hash[language] = attribute
         new_language_hash[language][:style] = [style]
       end
 
